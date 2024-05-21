@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Calculator Ibnu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+
+    <section>
+
+        <!-- introduction -->
+        <h1>Welcome to my calculator</h1>
+        <section>
+            <p>Halo kawan, selamat datang di kalkulator sederhanaku</p>
+        </section>
+
+        <!-- Title -->
+        <section>
+            <section>
+                <div class="section-content">
+                    <h2>Kalkulator Segitiga</h2>
+                </div>
+            <!-- Menu -->
+                <button onclick="pindahKonten('iniKeliling')" id="switch-keliling"><u>Keliling Segitiga</u></button>
+                <button onclick="pindahKonten('iniLuas')" id="switch-luas"><u>Luas Segitiga</u></button>
+            </section>
+            <!-- Luas Segitiga Atas -->
+        <div id="iniLuas" class="konten">
+            <section>
+                <div class="section-content">
+                    <h2>Luas Segitiga</h2>
+                </div>
+                <div calss="formula-img">
+                    <img style="display: block; margin: auto;" width="300" height="200" src="https://asset-a.grid.id//crop/0x0:0x0/700x0/photo/2021/01/15/3991804788.jpg">
+                </div>
+                <style>
+                    pre {
+                      font-size: 14px;
+                    }
+                  </style>
+                <p class="text-responsive">
+Seperti yang tercantum pada gambar di atas,rumus luas segitiga adalah:<br>
+L = 1/2 x a x t <br>
+a = panjang alas segitiga <br>
+t = tinggi segitiga <br>
+                </p>
+
+        <!-- Luas Segitiga Bawah -->
+            </section>
+            <hr>
+            <section>
+
+                <div class="container">
+                    <h2>Menghitung Luas Segitiga</h2>
+                    <label for="alas">Alas: </label>
+                    <input type="number" id="alas"><br>
+                    <label for="tinggi">Tinggi: </label>
+                    <input type="number" id="tinggi"><br>
+                    <button onclick="hitungLuas()">Hitung Luas</button><br>
+                    <button onclick="reset()">Reset</button><br>
+                    <label id="luas"></label><br><br>
+
+            </section>
+            
+        </section>
+        </div>
+        <div id="iniKeliling" class="konten">
+        <section>
+            <!-- keliling Segitiga Atas -->
+            <section>
+                <div class="section-content">
+                    <h2>Keliling Segitiga</h2>
+                </div>
+                <div calss="formula-img">
+                    <img style="display: block; margin: auto;" width="300" height="200" src="https://asset-a.grid.id//crop/0x0:0x0/700x0/photo/2021/01/15/1853786887.jpg">
+                </div>
+                <style>
+                    pre {
+                      font-size: 14px;
+                    }
+                  </style>
+                <p class="text-responsive">
+                    Nah, dari gambar di atas disebutkan bahwa rumus keliling segitiga adalah:<br>
+                    K = s + s + s <br>
+                    s = panjang sisi segitiga
+                </p>
+                
+        <!-- Luas Segitiga Bawah -->
+            </section>
+            <hr>
+            <section>
+                <header>
+                    <h2>Hitung keliling segitiga</h2>
+                </header>
+
+                <label for="sisiA">Sisi A: </label>
+                <input type="number" id="sisiA"><br>
+                <label for="sisiB">Sisi B: </label>
+                <input type="number" id="sisiB"><br>
+                <label for="sisiC">Sisi C: </label>
+                <input type="number" id="sisiC"><br>
+                <button onclick="hitungKeliling()">Hitung Keliling</button><br>
+                <button onclick="reset()">Reset</button><br>
+                <label id="keliling"></label>
+
+            </section>
+            
+        </section>
+        </div>
+    </section>
+
+</body>
+
+</html>

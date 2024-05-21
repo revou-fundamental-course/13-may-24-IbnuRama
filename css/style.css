@@ -1,0 +1,46 @@
+/* ini css */
+
+.section-content{  
+    background-color: burlywood;
+    color: whitesmoke;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+}
+.cention-content>h2{
+    margin: 0;    
+}
+
+#switch-keliling {
+    margin-top: 12px;   
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    background-color: moccasin;
+    border: 0;
+}
+
+#switch-luas{
+    margin-bottom: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    background-color: moccasin;
+    border: 0;
+}
+
+.formula-img{
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.text-responsive {
+    font-size: 2vw; 
+}
+
+@media screen and (max-width: 768px) {
+    .text-responsive {
+        font-size: 3vw; 
+    }
+}
